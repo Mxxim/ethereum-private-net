@@ -17,6 +17,7 @@ geth --networkid $networkid --datadir $datadirPath \
 --port $port --etherbase "80d5f860c2a76bc18ff13adb6d826d16448c489e" --nodiscover \
 --rpc --rpcaddr "0.0.0.0" \
 --rpcapi "eth,net,web3,admin,personal" \
+--rpccorsdomain="*" \
 --keystore $keystorePath \
 --password $passwordPath \
 --unlock "0,1,2" \
